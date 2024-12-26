@@ -1,5 +1,4 @@
-
-/* ------------------------------------ Header Start --------------------------- */
+/* -----------------------Header Start------------------- */
 
 *{
     margin: 0;
@@ -17,8 +16,12 @@ header{
 }
 
 .menu{
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
 .menu .menu_left img{
     padding: 10px 30px;
     height: 80px;
@@ -29,8 +32,8 @@ header{
 }
 
 .menu .menu_right ul li{
-   text-align: center;
-   margin: 15px 30px;
+   display: inline-block;
+   margin: 10px 30px;
 }
 
 .menu .menu_right ul li a{
@@ -43,32 +46,30 @@ header{
 
 .menu .menu_right ul li a:hover{
     color: white;
-    text-decoration: underline ;
-} 
+    text-decoration: underline;
+}
 
-/* -------------------------------- Header End ------------------------------ */
+/* ----------------------- Header End ------------------- */
 
-/* -------------------------------- Home Start ------------------------------- */
+/* ----------------------- Home Start ------------------- */
 
- .container{
+.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
- }
+}
 
 .home_text{
-    
     color: white;
-    padding-left: 40px;
+    font-size: 26px;
+    padding-left: 60px;
     padding-right: 20px;
 }
-  
+
 .home_text h2{
-    font-size: 30px;
     padding-top: 40px;
     color: white;
-    
 }
 
 .home_text h2 span{
@@ -76,7 +77,7 @@ header{
 }
 
 .home_text p{
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
@@ -85,18 +86,16 @@ header{
 .btn button{
     margin: 20px;
     padding: 15px 15px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 10px;
     border: 3px solid aqua;
     background-color: aqua;
     color: rgb(12, 3, 36);
     transition: 0.5s ease-in-out;
     letter-spacing: 1px;
-    
 }
 
 .btn button:hover{
-    
     background-color: rgb(12, 3, 36);
     color: aqua;
 }
@@ -116,11 +115,10 @@ button.btn2:hover{
     width: 450px;
     padding-top: 100px;
     padding-right: 100px;
-   
 }
 
 .home_image img{
-    width: 120%;
+    width: 100%;
     border: 3px solid aqua;
     border-radius: 10px;
     transition: .25s ease-in-out;
@@ -130,26 +128,23 @@ button.btn2:hover{
     transform: scale(1.15);
 }
 
-/* ----------------------- Home End -------------------------------------- */
+/* ----------------------- Home End ------------------- */
 
-/* ----------------------- About Start ----------------------------------- */
+/* -------------------------- About Start-------------- */
 
 .header_text h2{
     text-align: center;
     font-size: 50px;
     color: white;
     padding-bottom: 50px;
-    
 }
 
 .container .header_text h2 span{
     color: aqua;
-    
 }
 
 .header_text h2 span{
     color: aqua;
-    
 }
 
 .header_text h2 span1{
@@ -157,9 +152,9 @@ button.btn2:hover{
 }
 
 .about_image img{
-    height: 180px;
-    width: 150px;
-    border: 3px solid aqua;
+    height: 400px;
+    width: 300px;
+    border: 5px solid aqua;
     border-radius: 10px;
     transition: .25s ease-in-out;
 }
@@ -179,45 +174,45 @@ button.btn2:hover{
 .about_text h2{
     font-size: 42px;
     color: aqua;
-    padding-bottom: 30px;
-    
+    padding-bottom: 50px;
 }
 
 .about_text p{
-    font-size: 14px;
+    font-size: 22px;
     color: white;
-    padding-bottom: 6px;
+    font-weight: 400;
+    padding-bottom: 30px;
     text-align: justify;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
-/* ----------------------- About End ------------------------------ */
+/* -------------------------- About End--------------------------- */
 
 /* -------------------------- Service Start ------------------------*/
 
-
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
 
 .card{
-
     border: 3px solid aqua;
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: 500px;
     border-radius: 10px;
     transition: 0.25s ease-in-out;
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-
+    margin-left: 50px;
 }
 
 .card:hover{
     transform: scale(1.15);
-
 }
 
 .card img{
     width: 100%;
-    height: 150px;
+    height: 200px;
     border-radius: 6px;
 }
 
@@ -227,38 +222,32 @@ button.btn2:hover{
 
 .card .header-text h2{
     color: aqua;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .card .header-text p{
     color: white;
-    font-size: 12px;
-    
+    font-size: 16px;
+    text-align: justify;
 }
 
 .card2{
-
     border: 3px solid aqua;
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: 500px;
     border-radius: 10px;
     transition: 0.25s ease-in-out;
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    
 }
 
 .card2:hover{
     transform: scale(1.15);
-
 }
 
 .card2 img{
     width: 100%;
-    height: 150px;
+    height: 200px;
     border-radius: 6px;
 }
 
@@ -268,38 +257,33 @@ button.btn2:hover{
 
 .card2 .header-text h2{
     color: aqua;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .card2 .header-text p{
     color: white;
-    font-size: 12px;
-    
+    font-size: 16px;
+    text-align: justify;
 }
 
 .card3{
-
     border: 3px solid aqua;
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: 500px;
     border-radius: 10px;
     transition: 0.25s ease-in-out;
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    
+    margin-right: 50px;
 }
 
 .card3:hover{
     transform: scale(1.15);
-
 }
 
 .card3 img{
     width: 100%;
-    height: 150px;
+    height: 200px;
     border-radius: 6px;
 }
 
@@ -309,38 +293,20 @@ button.btn2:hover{
 
 .card3 .header-text h2{
     color: aqua;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .card3 .header-text p{
     color: white;
-    font-size: 12px;
-    
+    font-size: 16px;
+    text-align: justify;
 }
 
+/* -------------------------- Service  End ------------------------------ */
 
-.btn3 button{
-    margin: 20px;
-    padding: 15px 15px;
-    font-size: 12px;
-    border-radius: 10px;
-    border: 3px solid aqua;
-    background-color: aqua;
-    color: rgb(12, 3, 36);
-    transition: 0.5s ease-in-out;
-}
-
-.btn button:hover{
-    
-    background-color: rgb(12, 3, 36);
-    color: aqua;
-}
-
-/* -------------------------- Service  End ------------------------------*/
-
-/* -------------------------- Gallary Start ------------------------*/
+/* -------------------------- Gallary Start -----------*/
 
 .gallary-image img{
     height: 220px;
@@ -348,7 +314,7 @@ button.btn2:hover{
     border-radius: 5px;
     display: flex;
     transition: .25s ease-in-out;
-    margin: 0px 70px;
+    margin: 0px 50px;
 }
 
 .gallary-image img:hover{
@@ -358,19 +324,18 @@ button.btn2:hover{
 
 .gallary-image p{
     color: aqua;
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     font-weight: 400;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
-/* -------------------------- Gallary  End ------------------------------*/
+/* -------------------------- Gallary End ------------- */
 
-/* -------------------------- Contach Start ------------------------*/
+/* -------------------------- Contact Start -----------*/
 
 .contact-form{
-    
     width: 50%;
 }
 
@@ -379,25 +344,24 @@ button.btn2:hover{
     background-color: transparent;
     margin: 20px 50px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     border: none;
     outline: none;
     border-bottom: 3px solid aqua;
     border-radius: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .contact-text h3{
     color: aqua;
     font-size: 42px;
-    padding-left: 30px;
 }
 
 .contact-text p{
     color: white;
     font-size: 20px;
-    margin: 20px 100px;
+    margin: 20px 120px;
 }
 
 .contact-text i{
@@ -416,19 +380,16 @@ button.btn2:hover{
     transition: 0.5s ease-in-out;
     letter-spacing: 1px;
     margin-left: 300px;
-    
 }
 
 .btn3 button:hover{
-    
     background-color: rgb(12, 3, 36);
     color: aqua;
 }
 
-/* -------------------------- Contact  End ------------------------------*/
+/* -------------------------- Contact End ------------- */
 
-/* -------------------------- Footer Start ------------------------------*/
-
+/* ----------------------------Footer Start ------------------------*/
 
 .footer{
     height: 80px;
@@ -439,7 +400,7 @@ button.btn2:hover{
 .footer .container p{
     margin-top: 30px;
     color: white;
-    padding-left: 25px;
+    margin-left: 450px;
     font-size: 20px;
 }
 
@@ -447,22 +408,107 @@ button.btn2:hover{
     color: aqua;
 }
 
- .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 70px;
- }
 .footer .container a i{
     font-size: 20px;
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 .upper{
     position: fixed;
     right: 20px;
     bottom: 50px;
-    
 }
 
-/* -------------------------- Footer  End ------------------------------*/
+/* ----------------------------Fotter End */
+
+/* -------------------------- Media Queries -------------------------- */
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container, .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_image, .about_image, .service-card, .card, .card2, .card3 {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+
+    .menu .menu_right ul li {
+        margin: 5px 15px;
+    }
+
+    .home_text, .about_text, .contact-text, .service-card-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer .container p {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home_text h2 {
+        font-size: 22px;
+    }
+
+    .home_text p {
+        font-size: 18px;
+    }
+
+    .btn button {
+        font-size: 18px;
+        padding: 12px 12px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form form input {
+        width: 100%;
+    }
+
+    .card, .card2, .card3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gallary-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .upper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu .menu_right ul li a {
+        font-size: 18px;
+    }
+
+    .home_text p {
+        font-size: 16px;
+    }
+
+    .contact-form form input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .btn3 button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .footer .container p {
+        font-size: 16px;
+    }
+}
